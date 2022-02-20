@@ -27,6 +27,7 @@ body {
 }
 
 main {
+  max-width: 630px;
   margin: 30px;
   border-radius: 5px;
   overflow: hidden;
@@ -140,9 +141,55 @@ footer {
       'header header'
       'left right'
       / 1fr 1fr;
+
+    .card {
+      padding: 45px 40px;
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      &.top {
+        h1 {
+          font-size: 1.4rem;
+          width: 221px;
+        }
+
+        .lead {
+          margin: 30px 0 20px;
+          font-size: 1.05rem;
+        }
+      }
+
+      &.left {
+        p {
+          font-size: 0.98rem;
+        }
+
+        div {
+          margin: 25px 0 15px;
+        }
+      }
+
+      &.right {
+        p {
+          font-size: 0.9rem;
+          font-weight: 400;
+          margin-top: 25px;
+          margin-right: 60px;
+          line-height: 1.5;
+        }
+      }
+    }
   }
 
   footer {
     position: absolute;
+    bottom: 0;
   }
 }

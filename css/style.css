@@ -16,6 +16,7 @@ body {
 }
 
 main {
+  max-width: 630px;
   margin: 30px;
   border-radius: 5px;
   overflow: hidden;
@@ -129,7 +130,39 @@ footer {
   main .right {
     grid-area: right;
   }
+  main .card {
+    padding: 45px 40px;
+  }
+  main .card h2 {
+    font-size: 1.1rem;
+  }
+  main .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  main .card.top h1 {
+    font-size: 1.4rem;
+    width: 221px;
+  }
+  main .card.top .lead {
+    margin: 30px 0 20px;
+    font-size: 1.05rem;
+  }
+  main .card.left p {
+    font-size: 0.98rem;
+  }
+  main .card.left div {
+    margin: 25px 0 15px;
+  }
+  main .card.right p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-right: 60px;
+    line-height: 1.5;
+  }
   footer {
     position: absolute;
+    bottom: 0;
   }
 }
