@@ -1,0 +1,27 @@
+body {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  padding: 20px;
+}
+
+@media (min-width: 900px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    grid-template: 'header header' 'left right' / 1fr 1fr;
+  }
+  main .top {
+    grid-area: header;
+  }
+  main .left {
+    grid-area: left;
+  }
+  main .right {
+    grid-area: right;
+  }
+}

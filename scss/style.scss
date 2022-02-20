@@ -1,0 +1,29 @@
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  padding: 20px;
+}
+
+@media (min-width: 900px) {
+  main {
+    .top {
+      grid-area: header;
+    }
+    .left {
+      grid-area: left;
+    }
+    .right {
+      grid-area: right;
+    }
+
+    display: grid;
+    grid-template:
+      'header header'
+      'left right'
+      / 1fr 1fr;
+  }
+}
