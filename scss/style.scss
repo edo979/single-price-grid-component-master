@@ -1,11 +1,50 @@
+//## Colors
+
+//### Primary
+
+$Cyan: hsl(179, 62%, 43%);
+$Bright-Yellow: hsl(71, 73%, 54%);
+
+//### Neutral
+
+$Light-Gray: hsl(204, 43%, 93%);
+$Grayish-Blue: hsl(218, 22%, 67%);
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  font-family: 'Karla', sans-serif;
   display: grid;
   place-content: center;
   min-height: 100vh;
+  background-color: $Light-Gray;
 }
 
 .card {
-  padding: 20px;
+  padding: 30px 20px;
+  color: white;
+
+  &.top {
+    background-color: white;
+    color: $Grayish-Blue;
+  }
+  &.left {
+    background-color: $Cyan;
+  }
+  &.right {
+    background-color: lighten($color: $Cyan, $amount: 12%);
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
 }
 
 @media (min-width: 900px) {
